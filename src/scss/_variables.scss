@@ -1,0 +1,54 @@
+// ============================================
+// 顏色變數
+// ============================================
+
+// 主要品牌色
+$color-primary: #7158B4;        // 主要紫色
+$color-primary-dark: #6a1b9a;    // 深紫色
+
+// 背景色
+$color-bg-light: #f5f5f5;       // 淺灰背景
+$color-bg-white: #fff;          // 白色
+$color-bg-black: #000;          // 黑色
+
+// 文字顏色
+$color-text-dark: #2d2d2d;      // 深灰文字
+$color-text-gray: #333;         // 中灰文字
+$color-text-white: #fff;        // 白色文字
+
+// 邊框顏色
+$color-border-light: #D0D0D0;   // 淺灰邊框
+$color-border-gray: #D9D9D9;    // 中灰邊框
+$color-border-very-light: #eee;  // 極淺灰邊框
+
+// 特殊顏色
+$color-youtube-red: #ff0000;    // YouTube 紅色
+
+// ============================================
+// 陰影變數
+// ============================================
+
+// 邊框陰影顏色（對應 $color-border-light）
+$color-shadow-border: rgb(208, 208, 208);
+
+// 通用陰影
+$shadow-sm: rgba(0, 0, 0, 0.08);   // 小陰影
+$shadow-md: rgba(0, 0, 0, 0.1);    // 中陰影
+$shadow-lg: rgba(0, 0, 0, 0.12);   // 大陰影
+$shadow-xl: rgba(0, 0, 0, 0.15);   // 超大陰影
+$shadow-2xl: rgba(0, 0, 0, 0.2);   // 2倍超大陰影
+$shadow-3xl: rgba(0, 0, 0, 0.3);   // 3倍超大陰影
+
+// 半透明背景
+$overlay-white-light: rgba(255, 255, 255, 0.5);  // 半透明白色
+$overlay-white-medium: rgba(255, 255, 255, 0.7); // 中透明白色
+$overlay-white-full: rgba(255, 255, 255, 0.85);  // 高透明白色
+$overlay-white-none: rgba(255, 255, 255, 0);     // 透明
+$overlay-black-light: rgba(0, 0, 0, 0.7);       // 半透明黑色
+
+// 其他顏色
+$color-bg-gray-light: #EBEBEB;   // 淺灰背景
+$color-bg-gray-hover: #F6F6F6;    // hover 淺灰背景
+$color-bg-purple-light: #E1E3F7;  // 淺紫背景
+$color-bg-purple-hover: #c5caff;  // hover 淺紫背景
+

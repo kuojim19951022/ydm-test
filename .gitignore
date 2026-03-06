@@ -1,5 +1,6 @@
 # 編譯產物
-dist/css/*.css
+# 注意：dist/css/*.css 需要提交到 GitHub，供 GitHub Pages 使用
+# dist/css/*.css.map 可以忽略（source map 檔案）
 dist/css/*.css.map
 
 # 備份資料夾

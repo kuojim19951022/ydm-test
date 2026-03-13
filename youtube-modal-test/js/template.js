@@ -31,14 +31,8 @@ export const YOUTUBE_MODAL_TEMPLATE = `
           <p class="related-video-title"></p>
         </div>
       </template>
-
-        <template id="youtube-iframe-template">
-          <iframe class="youtube-iframe-player"></iframe>
-        </template>
+        
       </div>
     </div>
   </div>
 `;
-
-
-

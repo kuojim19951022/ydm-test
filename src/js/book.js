@@ -58,39 +58,22 @@ const $loadMoreBtn = document.getElementById("load-more-book");
 const $loadMoreContainer = document.querySelector(".load-more-container");
 const $bookContainer = document.querySelector(".book-grid-container");
 
-// ── 進行中的請求控制器（對應舊版 currentXHR）─────────────
-
-let currentController = null;
-
 // ── 抓取經書資料 ───────────────────────────────────────
 
 async function fetchBooks(offset) {
-  // 若有進行中的請求，先取消
-  if (currentController) {
-    currentController.abort();
-    currentController = null;
-  }
-
   setLoadingState(true);
 
   const params = new URLSearchParams({ offset });
 
-  currentController = new AbortController();
-
   try {
-    const res = await fetch(`${API_URL}?${params}`, {
-      signal: currentController.signal,
-    });
+    const res = await fetch(`${API_URL}?${params}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const response = await res.json();
-    currentController = null;
     handleSuccess(response);
   } catch (error) {
-    if (error.name === "AbortError") return;
-    currentController = null;
     handleError(error);
   } finally {
-    if (currentController === null) setLoadingState(false);
+    setLoadingState(false);
   }
 }
 
